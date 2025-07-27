@@ -1,10 +1,10 @@
 
 import 'package:flutter/material.dart';
-import 'package:rooms_navigation/widgets/room_card.dart';
+import 'package:rooms_navigation/widgets/cards/room_card.dart';
 
 import '../models/rooms/rooms_list.dart';
 import '../models/rooms/rooms_model.dart';
-import '../widgets/device_card.dart';
+import '../widgets/cards/device_card.dart';
 
 class Rooms extends StatefulWidget {
   const Rooms({super.key});
@@ -33,7 +33,7 @@ class _RoomsState extends State<Rooms> {
             });
           },
         )
-            : Icon(Icons.arrow_back_outlined),
+            : null ,
         title: Text(selectedRoom == null ? 'Rooms' : selectedRoom!.name,
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
       ),

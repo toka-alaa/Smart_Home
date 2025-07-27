@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rooms_navigation/views/halls.dart';
+import 'package:rooms_navigation/views/home_page.dart';
 
 
 void main() {
@@ -13,7 +13,7 @@ class SmartHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:  false,
-      home:  Halls(),
+      home:  Home(),
     );
   }
 }

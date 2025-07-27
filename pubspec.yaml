@@ -7,6 +7,9 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
+  flutter_bluetooth_serial: ^0.4.0
+  font_awesome_flutter: ^10.8.0
+  shared_preferences: ^2.5.3
   get: ^4.7.2
   flutter:
     sdk: flutter
@@ -24,6 +27,8 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/images/
+    - assets/icons/
     - assets/images/bedroom2.png
     - assets/images/bedroom.png
     - assets/images/hall.png

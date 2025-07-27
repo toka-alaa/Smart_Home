@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../models/halls/halls_list.dart';
 import '../models/halls/halls_model.dart';
-import '../widgets/device_card.dart';
-import '../widgets/room_card.dart';
+import '../widgets/cards/device_card.dart';
+import '../widgets/cards/room_card.dart';
 
 
 class Halls extends StatefulWidget {
@@ -33,8 +33,8 @@ class _HallsState extends State<Halls> {
             });
           },
         )
-            : Icon(Icons.arrow_back_outlined),
-        title: Text(selectedHall == null ? 'Rooms' : selectedHall!.name,
+            : null,
+        title: Text(selectedHall == null ? 'Halls' : selectedHall!.name,
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
       ),
       body: selectedHall == null ? RoomsGrid() : DevicesGrid(),
